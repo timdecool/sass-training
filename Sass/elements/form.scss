@@ -1,0 +1,34 @@
+.form-inputs, .form-textarea {
+    margin-bottom: $gap;
+    display: flex;
+    gap: $gap*2;
+    width: 100%;
+    @media (max-width: $mobile) {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+.input {
+    font-family: $text-font;
+    padding: $gap;
+    border-radius: none;
+    border: 1px solid $secondary-color;
+    background-color: $primary-color;
+    color: $title-color;
+    width: 50%;
+    &::placeholder {
+        vertical-align: center;
+        color: $text-color;
+        text-transform: capitalize;
+    }
+    @media (max-width: $mobile) {
+        width: 100%;
+    }
+}
+
+.textarea {
+    @extend .input;
+    width: 100%;
+    resize: none;
+}

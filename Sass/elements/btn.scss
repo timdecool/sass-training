@@ -1,0 +1,12 @@
+.btn {
+    background-color: $secondary-color;
+    padding: $gap $gap*3;
+    border: none;
+    @extend %title-element;
+    text-transform: capitalize;
+    font-size: 0.9rem;
+    &:hover{
+        cursor: pointer;
+        background-color: lighten($secondary-color, 10%);
+    }
+}
