@@ -3,7 +3,7 @@ body {
   background-color: #292929;
 }
 
-.btn, .footer h2, .footer .subtitle {
+.subtitle, h2, .btn {
   color: #fefefe;
   font-family: "Montserrat";
   text-transform: uppercase;
@@ -19,11 +19,7 @@ body {
   margin: 0;
   line-height: 1.5;
 }
-.footer h2 {
-  font-weight: 500;
-  font-size: 1.6rem;
-}
-@media (max-width: 790px) {
+@media (max-width: 860px) {
   .footer {
     padding: 30px 5%;
   }
@@ -43,7 +39,7 @@ body {
   gap: 30px;
   margin: 30px 0;
 }
-@media (max-width: 790px) {
+@media (max-width: 860px) {
   .footer__container {
     flex-direction: column;
   }
@@ -54,7 +50,7 @@ body {
   width: 35%;
   gap: 30px;
 }
-@media (max-width: 790px) {
+@media (max-width: 860px) {
   .footer__info {
     width: 100%;
     border-bottom: 1px solid #454544;
@@ -64,7 +60,7 @@ body {
 .footer__form {
   width: 65%;
 }
-@media (max-width: 790px) {
+@media (max-width: 860px) {
   .footer__form {
     width: 100%;
   }
@@ -74,7 +70,7 @@ body {
   padding-top: 30px;
   border-top: 1px solid #454544;
 }
-@media (max-width: 790px) {
+@media (max-width: 860px) {
   .footer__end {
     text-align: center;
   }
@@ -91,6 +87,9 @@ body {
   cursor: pointer;
   background-color: #5f5f5d;
 }
+.btn:active {
+  background-color: #454544;
+}
 
 .form-inputs, .form-textarea {
   margin-bottom: 15px;
@@ -98,10 +97,11 @@ body {
   gap: 30px;
   width: 100%;
 }
-@media (max-width: 790px) {
+@media (max-width: 860px) {
   .form-inputs, .form-textarea {
     flex-wrap: wrap;
     justify-content: center;
+    gap: 15px;
   }
 }
 
@@ -119,7 +119,7 @@ body {
   color: #898989;
   text-transform: capitalize;
 }
-@media (max-width: 790px) {
+@media (max-width: 860px) {
   .input, .textarea {
     width: 100%;
   }
@@ -128,6 +128,17 @@ body {
 .textarea {
   width: 100%;
   resize: none;
+  height: 100px;
+}
+@media (max-width: 860px) {
+  .textarea {
+    height: 200px;
+  }
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 1.6rem;
 }
 
 /*! normalize-scss | MIT/GPLv2 License | bit.ly/normalize-scss */

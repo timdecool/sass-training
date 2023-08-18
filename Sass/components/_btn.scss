@@ -1,4 +1,4 @@
-@import 'variables.scss';
+@import '../variables/variables.scss';
 
 .btn {
     background-color: $secondary-color;
@@ -10,5 +10,8 @@
     &:hover{
         cursor: pointer;
         background-color: lighten($secondary-color, 10%);
+    }
+    &:active{
+        background-color: $secondary-color;
     }
 }

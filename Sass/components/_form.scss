@@ -1,4 +1,4 @@
-@import 'variables.scss';
+@import '../variables/variables.scss';
 
 .form-inputs, .form-textarea {
     margin-bottom: $gap;
@@ -8,6 +8,7 @@
     @media (max-width: $mobile) {
         flex-wrap: wrap;
         justify-content: center;
+        gap: $gap;
     }
 }
 
@@ -33,4 +34,8 @@
     @extend .input;
     width: 100%;
     resize: none;
+    height: 100px;
+    @media (max-width: $mobile) {
+        height: 200px;
+    }
 }

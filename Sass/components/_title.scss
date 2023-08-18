@@ -1,0 +1,9 @@
+h2 {
+    @extend %title-element;
+    font-weight: 500;
+    font-size: 1.6rem;    
+}
+
+.subtitle {
+    @extend %title-element;
+}
